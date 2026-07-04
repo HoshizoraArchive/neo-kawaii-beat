@@ -1,0 +1,77 @@
+:root {
+  color-scheme: dark;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  color: #eff9ff;
+  background: #081226;
+  --bg: #081226;
+  --bg-2: #151031;
+  --panel: rgba(14, 29, 61, 0.68);
+  --panel-strong: rgba(18, 38, 78, 0.82);
+  --line: rgba(198, 229, 255, 0.18);
+  --text: #eff9ff;
+  --muted: #a8b9d6;
+  --cyan: #89e8ff;
+  --pink: #ff8edb;
+  --violet: #a58bff;
+  --moon: #fff0a6;
+  --danger-soft: #f2a7cb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  background:
+    linear-gradient(150deg, rgba(137, 232, 255, 0.08), transparent 36%),
+    linear-gradient(210deg, rgba(255, 142, 219, 0.08), transparent 42%),
+    var(--bg);
+}
+
+body.is-playing {
+  overflow: hidden;
+  overscroll-behavior: none;
+  position: fixed;
+  inset: 0;
+  width: 100%;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
